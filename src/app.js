@@ -17,6 +17,10 @@ app.use(
 app.use(express.static("public"));
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+}
+);
 // define routes
 // import
 // app.use("/api/v1/<address>", <router>);
